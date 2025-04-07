@@ -1,26 +1,36 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+body {
+  font-family: var(--font-body);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+h1, h2,h3{
+  font-family: var(--font-display)
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@utility container {
+  margin-inline: auto;
+  padding-inline: 1.125rem;
+  @media (max-width: 450px) {
+    padding-inline: 1rem; /* menor padding no sm */
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer utilities {
+  .card-sombra {
+    box-shadow:
+      10px 10px 10px 0px rgba(0, 0, 0, 0.15),
+      inset -10px -10px 10px 0px #FFF,
+      inset -10px -10px 10px 0px #FFF,
+      10px 10px 10px 0px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-sombra-button {
+    box-shadow:
+      3px 3px 3px 0px rgba(0, 0, 0, 0.15),
+      inset -3px -3px 3px 0px #FFF,
+      inset -3px -3px 3px 0px #FFF,
+      3px 3px 3px 0px rgba(0, 0, 0, 0.15);
+  }
 }
+
