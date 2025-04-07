@@ -28,8 +28,6 @@ h1, h2,h3{
   .card-sombra-button {
     box-shadow:
       3px 3px 3px 0px rgba(0, 0, 0, 0.15),
-      inset -3px -3px 3px 0px #FFF,
-      inset -3px -3px 3px 0px #FFF,
       3px 3px 3px 0px rgba(0, 0, 0, 0.15);
   }
 }

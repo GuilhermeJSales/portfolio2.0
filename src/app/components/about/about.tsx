@@ -1,9 +1,6 @@
 import Image from "next/image";
-import minhaFoto from "/public/minhafoto.webp";
-import github from "/public/github.svg";
-import linkedin from "/public/linkedin.svg";
-import email from "/public/email.svg";
-import cv from "/public/cv.svg";
+import minhaFoto from "@/app/assets/minhafoto.webp";
+import SocialLinks from "../social-links/social-links";
 
 export default function About() {
   return (
@@ -32,49 +29,7 @@ export default function About() {
             Meu objetivo é entregar soluções escaláveis e de alto impacto em
             cada projeto do qual participo.
           </p>
-
-          <div className="flex items-center gap-2.5">
-            <a
-              href="/curriculo-VITAE.pdf"
-              target="_blank"
-              title="Currículo Download"
-              download
-              className="bg-orange card-sombra-button mr-1.5 flex items-center gap-2.5 rounded-4xl border-1 border-zinc-800 px-4 py-2"
-            >
-              Currículo{" "}
-              <Image src={cv} width={30} height={30} alt="Download logo" />
-            </a>
-            <a
-              href="https://github.com/GuilhermeJSales"
-              target="_blank"
-              title="GitHub"
-            >
-              <Image src={github} width={30} height={30} alt="GitHub Logo" />
-            </a>
-
-            <a
-              href="https://www.linkedin.com/in/guilherme-jesus-sales/"
-              target="_blank"
-              title="LinkedIn"
-            >
-              <Image
-                src={linkedin}
-                width={30}
-                height={30}
-                alt="LinkedIn Logo"
-              />
-            </a>
-
-            <a
-              href="mailto:guilherme.jesus.sales@outlook.com"
-              target="_blank"
-              title="E-mail"
-              className="flex items-center gap-2.5"
-            >
-              <Image src={email} width={30} height={30} alt="E-mail Logo" />
-              guilherme.jesus.sales@outlook.com
-            </a>
-          </div>
+          <SocialLinks />
         </div>
       </div>
 
