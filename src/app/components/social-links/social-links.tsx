@@ -1,21 +1,12 @@
 import Image from "next/image";
 import github from "@/app/assets/github.svg";
 import linkedin from "@/app/assets/linkedin.svg";
+import whatsapp from "@/app/assets/whatsapp.svg";
 import email from "@/app/assets/email.svg";
-import cv from "@/app/assets/cv.svg";
 
 export default function SocialLinks() {
   return (
     <div className="flex items-center gap-2.5">
-      <a
-        href="/curriculo-VITAE.pdf"
-        target="_blank"
-        title="Currículo Download"
-        download
-        className="bg-orange card-sombra-button hover: transitions-all mr-1.5 flex items-center gap-2.5 rounded-4xl border-2 border-zinc-800 px-4 py-2 transition duration-500 ease-in-out hover:bg-zinc-200"
-      >
-        Currículo <Image src={cv} width={30} height={30} alt="Download logo" />
-      </a>
       <a
         href="https://github.com/GuilhermeJSales"
         target="_blank"
@@ -30,6 +21,14 @@ export default function SocialLinks() {
         title="LinkedIn"
       >
         <Image src={linkedin} width={30} height={30} alt="LinkedIn Logo" />
+      </a>
+
+      <a
+        href="https://api.whatsapp.com/send/?phone=5511961683295"
+        target="_blank"
+        title="WhatsApp"
+      >
+        <Image src={whatsapp} width={30} height={30} alt="WhatsApp Logo" />
       </a>
 
       <a
