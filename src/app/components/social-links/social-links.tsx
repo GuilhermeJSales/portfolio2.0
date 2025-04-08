@@ -38,7 +38,9 @@ export default function SocialLinks() {
         className="flex items-center gap-2.5"
       >
         <Image src={email} width={30} height={30} alt="E-mail Logo" />
-        guilherme.jesus.sales@outlook.com
+        <span className="hidden md:block">
+          guilherme.jesus.sales@outlook.com
+        </span>
       </a>
     </div>
   );

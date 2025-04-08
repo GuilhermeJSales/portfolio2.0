@@ -12,12 +12,26 @@ h1, h2,h3{
   font-family: var(--font-display)
 }
 
+
+
+img{
+  display:block;
+  max-width: 100%;
+  height: auto;
+}
+
 @utility container {
   margin-inline: auto;
   padding-inline: 1.125rem;
+  @media (min-width: 1208px) and (max-width:1305px) {
+    max-width: 74rem; /* menor padding no sm */
+  }
+  @media (max-width: 677px){
+    width: 90%;
+  }
   @media (max-width: 450px) {
     padding-inline: 1rem; /* menor padding no sm */
-  }
+  } 
 }
 
 @layer utilities {
