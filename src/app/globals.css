@@ -1,5 +1,33 @@
 @import "tailwindcss";
 
+@theme {
+  --animate-slideIn: slideIn .5s ease-in-out forwards;
+  @keyframes slideIn {
+    0%{
+      opacity:0;
+      transform: translate(-20px)
+    }
+    100% {
+      opacity:1;
+      transform: translateX(0);
+    }
+  }
+
+
+  --animate-fadeInOpacity: fadeInOpacity .4s ease-in-out forwards;
+  @keyframes fadeInOpacity {
+    0%{
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+
+}
+
+
+
 html{
   scroll-behavior: smooth;
 }
@@ -34,6 +62,12 @@ img{
   } 
 }
 
+.menu-active::after{
+transform: rotate(90deg);
+width: 4px;
+height: 4px;
+}
+
 @layer utilities {
   .card-sombra {
     box-shadow:
@@ -49,4 +83,6 @@ img{
       3px 3px 3px 0px rgba(0, 0, 0, 0.15);
   }
 }
+
+
 
