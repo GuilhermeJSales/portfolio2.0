@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { font_body, font_display } from "./fonts";
 import Header from "./components/header";
+import Whatsapp from "./components/whatsapp";
 
 export const metadata: Metadata = {
   title: "Desenvolvedor Front-End | Guilherme Jesus Sales",
@@ -22,6 +23,7 @@ export default function RootLayout({
       >
         <Header />
         {children}
+        <Whatsapp />
       </body>
     </html>
   );
