@@ -5,11 +5,11 @@ import SocialLinks from "../social-links/social-links";
 export default function About() {
   return (
     <section
-      className="grid grid-cols-1 items-center gap-14 pb-14 lg:grid-cols-[1fr_auto] lg:justify-items-end"
+      className="grid items-center gap-14 pb-14 lg:grid-cols-[minmax(0,_800px)_auto] lg:justify-items-end"
       id="sobre"
     >
       <div>
-        <h1 className="relative mb-2 text-2xl font-bold text-zinc-800 before:absolute before:-bottom-5 before:left-6 before:-z-10 before:h-25 before:w-5 before:rotate-45 before:bg-orange-300 after:absolute after:-bottom-5 after:left-1 after:-z-10 after:h-25 after:w-5 after:rotate-45 after:bg-orange-400 md:text-3xl lg:text-4xl xl:text-5xl">
+        <h1 className="relative mb-2 text-4xl font-bold text-zinc-800 before:absolute before:-bottom-5 before:left-6 before:-z-10 before:h-25 before:w-5 before:rotate-45 before:bg-orange-300 after:absolute after:-bottom-5 after:left-1 after:-z-10 after:h-25 after:w-5 after:rotate-45 after:bg-orange-400 md:text-5xl lg:text-4xl xl:text-5xl">
           Guilherme Jesus Sales
         </h1>
         <h2 className="text-xl font-bold text-zinc-500 md:text-3xl lg:text-2xl xl:text-3xl">

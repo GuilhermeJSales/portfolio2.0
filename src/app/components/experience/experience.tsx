@@ -3,16 +3,15 @@ import ExperienceItem from "./experienceItem";
 
 export default function Experience() {
   return (
-    <section className="grid gap-10 pt-14 lg:grid-cols-[1fr_2fr] lg:gap-24">
-      <h2 className="text-6xl leading-none font-extrabold break-all text-zinc-700 uppercase lg:max-w-[4ch] lg:text-[8rem]">
+    <section className="pt-28" id="experiencias">
+      <h2 className="mb-18 text-4xl font-extrabold text-zinc-800 uppercase md:text-5xl lg:text-4xl xl:text-5xl">
         Experiências
       </h2>
-
-      <div>
+      <ul className="flex flex-col pl-6">
         {experiences.map((exp) => (
           <ExperienceItem key={exp.id} {...exp} />
         ))}
-      </div>
+      </ul>
     </section>
   );
 }

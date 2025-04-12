@@ -40,6 +40,12 @@ h1, h2,h3{
   font-family: var(--font-display)
 }
 
+@media (max-width: 460px) {
+  h1,h2{
+    font-size: 1.5rem;
+  }
+} 
+
 
 
 img{

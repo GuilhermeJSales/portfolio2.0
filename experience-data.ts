@@ -10,7 +10,7 @@ export type ExperienceProps = {
 export const experiences: ExperienceProps[] = [
   {
     id: 0,
-    data: "11/23 a atual",
+    data: "NOVEMBRO 2023 - ATUAL",
     empresa: "Freelancer",
     cargo: "Desenvolvedor Front-End",
     description:
@@ -31,7 +31,7 @@ export const experiences: ExperienceProps[] = [
   },
   {
     id: 1,
-    data: "07/24 a 04/2025",
+    data: "JULHO 2024 - ABRIL 2025",
     empresa: "Quality Digital",
     cargo: "Analista de sistemas JR",
     description:
@@ -40,7 +40,7 @@ export const experiences: ExperienceProps[] = [
   },
   {
     id: 2,
-    data: "03/23 a 11/23",
+    data: "MARÇO 2023 - NOVEMBRO 2023",
     empresa: "Integração Digital",
     cargo: "Desenvolvedor Front-End",
     description:
@@ -63,7 +63,7 @@ export const experiences: ExperienceProps[] = [
   },
   {
     id: 3,
-    data: "02/21 a 03/23",
+    data: "FEVEREIRO 2021 - MARÇO 2023",
     empresa: "Agência R3",
     cargo: "Desenvolvedor Front-End",
     description:
