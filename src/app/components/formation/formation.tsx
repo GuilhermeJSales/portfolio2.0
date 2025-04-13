@@ -40,7 +40,7 @@ export default function Formation() {
     },
     {
       id: 4,
-      data: "FEVEREIRO 2012 - DEZEMBRO 2013 (Trancado)",
+      data: "FEVEREIRO 2012 - DEZEMBRO 2013",
       curso: "Análise e Desenv. de Sistemas",
       escola: "Universidade Nove de Julho - UNINOVE",
       local: "Vila Maria - São Paulo",
@@ -48,7 +48,7 @@ export default function Formation() {
     {
       id: 5,
       data: "JANEIRO 2012 - JANEIRO 2013",
-      curso: "Inglês",
+      curso: "Inglês - Básico & Intermediário",
       escola: "Microlins",
       local: "Penha - São Paulo",
     },
