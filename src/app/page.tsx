@@ -5,7 +5,7 @@ import Skills from "./components/skills/skills";
 
 export default function Home() {
   return (
-    <main className="container pt-14 pb-14">
+    <main className="pt-14 pb-14">
       <About />
       <Experience />
       <Formation />

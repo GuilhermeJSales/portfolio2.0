@@ -78,7 +78,7 @@ export default function Skills() {
   ];
 
   return (
-    <section className="pt-28" id="formacao">
+    <section className="container pt-28" id="formacao">
       <h2 className="mb-18 text-4xl font-extrabold text-zinc-800 uppercase md:text-5xl lg:text-4xl xl:text-5xl">
         Habilidades
       </h2>
