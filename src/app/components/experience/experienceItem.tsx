@@ -1,4 +1,3 @@
-import { info } from "console";
 import { ExperienceProps } from "../../../../experience-data";
 
 export default function ExperienceItem({

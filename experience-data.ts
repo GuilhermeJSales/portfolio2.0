@@ -97,6 +97,7 @@ export const experiences: ExperienceProps[] = [
       "HTML5",
       "CSS3",
       "JavaScript",
+      "JQuery",
       "PHP",
       "WordPress",
       "Elementor",
