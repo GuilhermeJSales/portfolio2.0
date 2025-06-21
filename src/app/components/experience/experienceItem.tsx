@@ -1,4 +1,5 @@
 import { ExperienceProps } from "../../../../experience-data";
+import { Separator } from "@/components/ui/separator";
 
 export default function ExperienceItem({
   cargo,
@@ -29,15 +30,14 @@ export default function ExperienceItem({
         <p className="text-sm text-zinc-800">São Paulo - SP</p>
       </div>
       <div className="max-lg:pl-6 lg:max-w-[500px] xl:max-w-[700px] 2xl:max-w-[850px]">
-        <p className="mb-4 border-b-2 border-zinc-100 pb-4 text-base text-zinc-700">
-          {description}
-        </p>
+        <p className="pb-4 text-base text-zinc-700">{description}</p>
+        <Separator className="mb-4 h-2 bg-zinc-200" />
         <p className="text-base font-bold text-zinc-800">
           Tecnologias utilizadas:
         </p>
         <ul className="flex flex-wrap gap-1">
           {competencias.map((comp, i) => (
-            <li key={i} className="mr-1 text-sm">
+            <li key={i} className="mr-1 flex items-center gap-2 text-sm">
               {comp}
             </li>
           ))}

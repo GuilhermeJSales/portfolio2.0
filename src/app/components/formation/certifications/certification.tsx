@@ -1,3 +1,4 @@
+import { Separator } from "@/components/ui/separator";
 interface CertificationsProps {
   id: number;
   name: string;
@@ -117,24 +118,29 @@ const certifications: CertificationsProps[] = [
 export default function Certification() {
   return (
     <article>
-      <h2 className="mb-18 text-4xl font-extrabold text-zinc-800 uppercase md:text-5xl lg:text-4xl xl:text-5xl">
-        Certificados:
+      <h2 className="text-xl font-extrabold text-zinc-800 uppercase">
+        Certificados
       </h2>
-      <ul className="flex gap-6 p-4 max-lg:snap-x max-lg:snap-mandatory max-lg:overflow-x-auto lg:flex-wrap">
+      <p className="text-base text-zinc-600">
+        Clique para verificar as credenciais:
+      </p>
+      <Separator className="my-4 bg-zinc-400" />
+      <div className="mx-md:snap-x flex gap-4 max-md:snap-mandatory max-md:overflow-x-auto max-md:pb-4 md:flex-wrap">
         {certifications.map((item) => (
-          <li key={item.id}>
+          <div key={item.id} className="flex h-5 items-center gap-4">
             <a
               href={item.url}
               target="_blank"
               referrerPolicy="no-referrer"
               title={`${item.name} - ${item.school} - ${item.time}`}
-              className="rounded-2xl border border-zinc-950 p-2 text-center whitespace-nowrap transition-all hover:border-amber-600 hover:text-amber-600"
+              className="text-center text-sm whitespace-nowrap transition-all hover:border-amber-600 hover:text-amber-600"
             >
-              {item.name} - {item.school}
+              {item.name}
             </a>
-          </li>
+            <Separator className="bg-zinc-400" orientation="vertical" />
+          </div>
         ))}
-      </ul>
+      </div>
     </article>
   );
 }
