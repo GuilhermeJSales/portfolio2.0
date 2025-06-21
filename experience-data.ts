@@ -15,7 +15,7 @@ export type ExperienceProps = {
 export const experiences: ExperienceProps[] = [
   {
     id: 0,
-    data: "NOVEMBRO 2023 - ATUAL",
+    data: "ABRIL 2025 - ATUAL",
     empresa: "Freelancer",
     cargo: "Desenvolvedor Front-End",
     info2: {
@@ -24,7 +24,7 @@ export const experiences: ExperienceProps[] = [
     },
     promocao: false,
     description:
-      "Responsável por todas as etapas do trabalho, desde reuniões com clientes, desenvolvimento do layout e desenvolvimento dos web sites estáticos e landing pages/paginas de capturas.",
+      "Desenvolvimento de sites institucionais e landing pages. Responsável pelo desenvolvimento do Layout, Copy e edição de imagens para utilizar nas páginas.",
     competencias: [
       "HTML5",
       "CSS3",
@@ -84,15 +84,15 @@ export const experiences: ExperienceProps[] = [
   {
     id: 3,
     data: "FEVEREIRO 2021 - MARÇO 2023",
-    empresa: "Agência R3",
-    cargo: "Desenvolvedor Front-End",
+    empresa: "Freelancer",
+    cargo: "Web Designer",
     info2: {
       data2: "",
       cargo2: "",
     },
     promocao: false,
     description:
-      "Responsável pelo desenvolvimento e manutenção de sites institucionais, além de desenvolvimento de imagens, textos e manutenção de temas premium do wordpress.",
+      "Desenvolvimento de sites institucionais e landing pages. Desenvolvimento de imagens e vídeos para redes sociais, além de logotipos e cartões de visitas.",
     competencias: [
       "HTML5",
       "CSS3",
@@ -103,6 +103,8 @@ export const experiences: ExperienceProps[] = [
       "Elementor",
       "Figma",
       "Adobe Photoshop",
+      "Adobe Illustrator",
+      "Adobe Premier",
     ],
   },
 ];
