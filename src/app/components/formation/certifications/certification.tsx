@@ -1,4 +1,5 @@
 import { Separator } from "@/components/ui/separator";
+
 interface CertificationsProps {
   id: number;
   name: string;
@@ -117,7 +118,7 @@ const certifications: CertificationsProps[] = [
 
 export default function Certification() {
   return (
-    <article>
+    <article className="px-5 pt-28">
       <h2 className="text-xl font-extrabold text-zinc-800 uppercase">
         Certificados
       </h2>
@@ -125,7 +126,7 @@ export default function Certification() {
         Clique para verificar as credenciais:
       </p>
       <Separator className="my-4 bg-zinc-400" />
-      <div className="mx-md:snap-x flex gap-4 max-md:snap-mandatory max-md:overflow-x-auto max-md:pb-4 md:flex-wrap">
+      <div className="flex snap-x snap-mandatory gap-4 overflow-x-auto max-lg:pb-4">
         {certifications.map((item) => (
           <div key={item.id} className="flex h-5 items-center gap-4">
             <a

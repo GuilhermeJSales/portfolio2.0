@@ -55,7 +55,7 @@ export default function Formation() {
     },
   ];
   return (
-    <section className="bg-gray-100 pt-28 pb-20" id="formacao">
+    <section className="bg-gray-100 pt-28" id="formacao">
       <div className="container">
         <h2 className="mb-18 text-4xl font-extrabold text-zinc-800 uppercase md:text-5xl lg:text-4xl xl:text-5xl">
           Cursos e Formações
@@ -66,7 +66,6 @@ export default function Formation() {
             <FormationItem key={form.id} {...form} />
           ))}
         </ul>
-        <Certification />
       </div>
     </section>
   );
