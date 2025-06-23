@@ -11,7 +11,6 @@ import email from "@/app/assets/email.svg";
 export default function Footer() {
   return (
     <footer>
-      <Certification />
       <section className="relative mt-2 bg-gray-200 py-20">
         <div className="container grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-4">
           <div className="flex gap-6 max-sm:flex-col">

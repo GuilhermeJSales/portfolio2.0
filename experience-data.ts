@@ -24,7 +24,7 @@ export const experiences: ExperienceProps[] = [
     },
     promocao: false,
     description:
-      "Desenvolvimento de sites institucionais e landing pages. Responsável pelo desenvolvimento do Layout, Copy e edição de imagens para utilizar nas páginas.",
+      "Atuo no desenvolvimento de sites institucionais e landing pages responsivas e performáticas, cuidando de todo o processo, desde o layout e identidade visual até a criação de imagens, textos (copy) e implementação do front-end.",
     competencias: [
       "HTML5",
       "CSS3",
@@ -50,7 +50,7 @@ export const experiences: ExperienceProps[] = [
     },
     promocao: false,
     description:
-      "Responsável pelo suporte a sistemas ERP na Protege, líder no setor de segurança no Brasil, atuando na resolução de bugs, elaboração de documentação técnica detalhada e implementação de melhorias contínuas.",
+      "Responsável pelo suporte a sistemas ERP na Protege, líder no setor de segurança no Brasil, atuando na resolução de bugs, elaboração de documentação técnica detalhada e implementação de melhorias contínuas. Desenvolvi um sistema web de armazenamento e atualização de KCS para melhoria de performance da equipe, utilizando React, Firebase e CSS Modules.",
     competencias: ["SQL Server", "CherWell", "JavaScript", "ReactJS", "NodeJS"],
   },
   {
@@ -64,7 +64,7 @@ export const experiences: ExperienceProps[] = [
     },
     promocao: true,
     description:
-      "Responsável pelo desenvolvimento e manutenção de sites institucionais, com ênfase em performance, acessibilidade, SEO e boas práticas de desenvolvimento, assegurando uma experiência de navegação fluida, inclusiva e de fácil manutenção.",
+      "Iniciei na empresa como Desenvolvedor Front-End JR 1, sendo responsável pelo desenvolvimento e manutenção de landing pages responsivas, alterações de layout, edição de imagens, configuração de hospedagens e resolução de demandas da equipe de tráfego pago. Após demonstrar proatividade e domínio técnico, fui promovido a Desenvolvedor Front-End JR 2, assumindo projetos mais complexos, como sites institucionais completos, com foco em performance, acessibilidade, SEO e boas práticas de desenvolvimento. Além disso, passei a atuar na refatoração de códigos legados e na implementação de sites com arquitetura mobile first.",
     competencias: [
       "HTML5",
       "CSS3",
@@ -83,7 +83,7 @@ export const experiences: ExperienceProps[] = [
   },
   {
     id: 3,
-    data: "FEVEREIRO 2021 - MARÇO 2023",
+    data: "NOVEMBRO 2019 - MARÇO 2023",
     empresa: "Freelancer",
     cargo: "Web Designer",
     info2: {
@@ -92,7 +92,7 @@ export const experiences: ExperienceProps[] = [
     },
     promocao: false,
     description:
-      "Desenvolvimento de sites institucionais e landing pages. Desenvolvimento de imagens e vídeos para redes sociais, além de logotipos e cartões de visitas.",
+      "Atuei como freelancer atendendo clientes e agências de marketing durante o período da pandemia, oferecendo soluções completas em web design. Fui responsável pelo desenvolvimento de sites responsivos e personalizados, criação de logotipos, peças para redes sociais e edição de vídeos.",
     competencias: [
       "HTML5",
       "CSS3",

@@ -31,17 +31,19 @@ export default function SocialLinks() {
         <Image src={whatsapp} width={30} height={30} alt="WhatsApp Logo" />
       </a>
 
-      <a
-        href="mailto:guilherme.jesus.sales@outlook.com"
-        target="_blank"
-        title="E-mail"
-        className="flex items-center gap-2.5"
-      >
-        <Image src={email} width={30} height={30} alt="E-mail Logo" />
-        <span className="hidden md:block">
+      <div className="flex gap-2">
+        <a
+          href="mailto:guilherme.jesus.sales@outlook.com"
+          target="_blank"
+          title="E-mail"
+          className="flex items-center gap-2.5"
+        >
+          <Image src={email} width={30} height={30} alt="E-mail Logo" />
+        </a>
+        <span className="hidden select-all md:block">
           guilherme.jesus.sales@outlook.com
         </span>
-      </a>
+      </div>
     </div>
   );
 }

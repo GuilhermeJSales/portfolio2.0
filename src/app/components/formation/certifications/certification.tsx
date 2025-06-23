@@ -1,147 +1,69 @@
+import { CertificationsProps } from "../formationItem";
 import { Separator } from "@/components/ui/separator";
+import { Button } from "@/components/ui/button";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import { DialogClose } from "@radix-ui/react-dialog";
 
-interface CertificationsProps {
-  id: number;
-  name: string;
-  school: string;
-  time: string;
-  url: string;
-}
-
-const certifications: CertificationsProps[] = [
-  {
-    id: 0,
-    name: "NextJS",
-    school: "Origamid",
-    time: "22hr",
-    url: "https://www.origamid.com/certificate/8a4ec39d",
-  },
-  {
-    id: 1,
-    name: "ReactJS",
-    school: "Rocketseat",
-    time: "50hr",
-    url: "https://app.rocketseat.com.br/certificates/17247462-85ef-406f-a6a7-cbea9ee1fefa",
-  },
-  {
-    id: 2,
-    name: "TypeScript",
-    school: "Origamid",
-    time: "22hr",
-    url: "https://www.origamid.com/certificate/dcb98247",
-  },
-  {
-    id: 3,
-    name: "React com TypeScript",
-    school: "Origamid",
-    time: "10hr",
-    url: "https://www.origamid.com/certificate/dcb98247",
-  },
-  {
-    id: 4,
-    name: "React Completo",
-    school: "Origamid",
-    time: "36hr",
-    url: "https://www.origamid.com/certificate/e069e5dd",
-  },
-  {
-    id: 5,
-    name: "Redux com React",
-    school: "Origamid",
-    time: "16hr",
-    url: "https://www.origamid.com/certificate/466c7246",
-  },
-  {
-    id: 6,
-    name: "JavaScript ES6+",
-    school: "Origamid",
-    time: "74hr",
-    url: "https://www.origamid.com/certificate/6f09fca4",
-  },
-  {
-    id: 7,
-    name: "Web Design Completo",
-    school: "Origamid",
-    time: "44hr",
-    url: "https://www.origamid.com/certificate/00bebe4a",
-  },
-  {
-    id: 8,
-    name: "TailwindCSS",
-    school: "Origamid",
-    time: "16hr",
-    url: "https://www.origamid.com/certificate/2aa4637f",
-  },
-  {
-    id: 9,
-    name: "CSS Flexbox",
-    school: "Origamid",
-    time: "6hr",
-    url: "http://origamid.com/certificate/49476f43",
-  },
-  {
-    id: 10,
-    name: "CSS Grid Layout",
-    school: "Origamid",
-    time: "10hr",
-    url: "https://www.origamid.com/certificate/d0de92af",
-  },
-  {
-    id: 11,
-    name: "CSS Avançado",
-    school: "Origamid",
-    time: "18hr",
-    url: "https://www.origamid.com/certificate/5f530d9f",
-  },
-  {
-    id: 12,
-    name: "Git e GitHub",
-    school: "Udemy",
-    time: "1hr",
-    url: "https://www.udemy.com/certificate/UC-be5224c6-fd7e-425e-bea6-b1af83e9d930/",
-  },
-  {
-    id: 13,
-    name: "Design System",
-    school: "Rocketseat",
-    time: "5hr",
-    url: "https://app.rocketseat.com.br/certificates/a99ec08d-4e13-40bf-a433-9bbf555ec70f",
-  },
-  {
-    id: 14,
-    name: "Adobe XD",
-    school: "Origamid",
-    time: "6hr",
-    url: "https://www.origamid.com/certificate/fceee710",
-  },
-];
-
-export default function Certification() {
+export default function Certification({
+  certificados,
+}: {
+  certificados: CertificationsProps[];
+}) {
   return (
-    <article className="px-5 pt-28">
-      <h2 className="text-xl font-extrabold text-zinc-800 uppercase">
-        Certificados
-      </h2>
-      <p className="text-base text-zinc-600">
-        Clique para verificar as credenciais:
-      </p>
-      <Separator className="my-4 bg-zinc-400" />
-      <div className="flex snap-x snap-mandatory gap-4 overflow-x-auto max-lg:pb-4">
-        {certifications.map((item) => (
-          <div key={item.id} className="flex h-5 items-center gap-4">
-            <a
-              href={item.url}
-              target="_blank"
-              referrerPolicy="no-referrer"
-              title={`${item.name} - ${item.school} - ${item.time}`}
-              className="text-center text-sm whitespace-nowrap transition-all hover:border-amber-600 hover:text-amber-600"
+    <Dialog>
+      <DialogTrigger className="cursor-pointer text-sm text-amber-800 transition-all hover:bg-transparent hover:text-blue-600">
+        Ver Certificados
+      </DialogTrigger>
+      <DialogContent>
+        <DialogHeader>
+          <DialogTitle className="capitalize">Certificados</DialogTitle>
+          <DialogDescription>
+            Clique no nome do curso para verificar as credenciais:
+          </DialogDescription>
+          {certificados.map((item) => (
+            <div
+              key={item.id}
+              className="grid w-full grid-cols-[auto_minmax(0,1fr)_minmax(0,1fr)] items-center gap-2"
             >
-              {item.name}
-            </a>
-            <Separator className="bg-zinc-400" orientation="vertical" />
-          </div>
-        ))}
-      </div>
-    </article>
+              <span className="text-sm font-bold whitespace-nowrap capitalize">
+                Curso:
+              </span>
+
+              <a
+                href={item.url}
+                className="truncate text-sm text-gray-600 capitalize hover:text-amber-600"
+                target="_blank"
+                referrerPolicy="no-referrer"
+              >
+                {item.name}
+              </a>
+
+              <span className="truncate text-sm font-bold text-gray-800 capitalize">
+                Carga Horária: <span className="font-normal">{item.time}</span>
+              </span>
+            </div>
+          ))}
+        </DialogHeader>
+        <DialogFooter className="sm:justify-start">
+          <DialogClose asChild>
+            <Button
+              type="button"
+              className="cursor-pointer bg-zinc-900/5 hover:bg-transparent"
+              variant="outline"
+            >
+              Fechar
+            </Button>
+          </DialogClose>
+        </DialogFooter>
+      </DialogContent>
+    </Dialog>
   );
 }

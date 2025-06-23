@@ -55,13 +55,13 @@ export default function Formation() {
     },
   ];
   return (
-    <section className="bg-gray-100 pt-28" id="formacao">
+    <section className="bg-gray-100 pt-28 pb-28" id="formacao">
       <div className="container">
         <h2 className="mb-18 text-4xl font-extrabold text-zinc-800 uppercase md:text-5xl lg:text-4xl xl:text-5xl">
           Cursos e Formações
         </h2>
 
-        <ul className="items-start pl-6 lg:grid lg:grid-cols-3 lg:justify-items-center">
+        <ul className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 lg:justify-items-center">
           {formationData.map((form) => (
             <FormationItem key={form.id} {...form} />
           ))}
