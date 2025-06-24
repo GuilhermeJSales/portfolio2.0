@@ -19,7 +19,7 @@ export default function Certification({
 }) {
   return (
     <Dialog>
-      <DialogTrigger className="cursor-pointer text-sm text-amber-800 transition-all hover:bg-transparent hover:text-blue-600">
+      <DialogTrigger className="animate-pulse cursor-pointer text-sm text-amber-800 transition-all hover:bg-transparent hover:text-blue-600">
         Ver Certificados
       </DialogTrigger>
       <DialogContent>

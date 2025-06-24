@@ -12,7 +12,7 @@ export default function ExperienceItem({
 }: ExperienceProps) {
   return (
     <li className="relative flex items-start gap-5 after:absolute after:-left-3 after:block after:h-full after:w-1 after:rounded-2xl after:bg-zinc-200 max-lg:flex-col max-lg:pb-8">
-      <div className="after: relative z-40 pl-5 before:absolute before:top-0 before:-left-4.5 before:block before:h-4 before:w-4 before:rounded-full before:border-2 before:border-white before:bg-amber-600 lg:mb-32 lg:w-[500px] xl:w-[600px] 2xl:w-[700px]">
+      <div className="after: relative z-40 pl-5 before:absolute before:top-0 before:-left-4.5 before:z-10 before:block before:h-4 before:w-4 before:rounded-full before:border-2 before:border-white before:bg-amber-600 after:absolute after:top-0 after:-left-4.5 after:h-4 after:w-4 after:animate-ping after:rounded-full after:bg-amber-400 after:opacity-75 lg:mb-32 lg:w-[500px] xl:w-[600px] 2xl:w-[700px]">
         {promocao && (
           <>
             <time className="mb-2.5 font-bold uppercase lg:text-lg">
