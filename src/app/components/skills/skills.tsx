@@ -44,8 +44,8 @@ export default function Skills() {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="absolute left-5 z-10 h-full cursor-pointer" />
-          <CarouselNext className="absolute right-5 z-10 h-full cursor-pointer" />
+          <CarouselPrevious className="absolute left-5 z-10 cursor-pointer" />
+          <CarouselNext className="absolute right-5 z-10 cursor-pointer" />
         </Carousel>
       </div>
     </section>
