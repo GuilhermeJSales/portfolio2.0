@@ -55,12 +55,12 @@ export const experiences: ExperienceProps[] = [
   },
   {
     id: 2,
-    data: "MARÇO 2023 - JUNHO 2023",
+    data: "MARÇO 2023 - NOVEMBRO 2023",
     empresa: "Integração Digital",
-    cargo: "Desenvolvedor Front-End - Junior",
+    cargo: "Desenvolvedor Front-End",
     info2: {
-      data2: "JUNHO 2023 - NOVEMBRO 2023",
-      cargo2: "Desenvolvedor Front-End - Pleno",
+      data2: "",
+      cargo2: "",
     },
     promocao: true,
     description:
