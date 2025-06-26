@@ -36,7 +36,7 @@ export default function Header() {
   ];
 
   return (
-    <header className="fixed z-[800] h-[99px] w-full bg-white shadow-md">
+    <header className="z-[800] w-full bg-white">
       <div className="container grid grid-cols-[1fr_auto] items-center pt-5 pb-5">
         <Image
           src={logotipo}
