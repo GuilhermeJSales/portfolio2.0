@@ -1,4 +1,4 @@
-import { ExperienceProps } from "../../../../experience-data";
+import { ExperienceProps } from "../../../../datas/experience-data";
 import { Separator } from "@/components/ui/separator";
 
 export default function ExperienceItem({

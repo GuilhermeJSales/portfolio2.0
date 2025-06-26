@@ -1,9 +1,9 @@
-import { experiences } from "../../../../experience-data";
+import { experiences } from "../../../../datas/experience-data";
 import ExperienceItem from "./experienceItem";
 
 export default function Experience() {
   return (
-    <section className="container pt-28" id="experiencias">
+    <section className="container pt-14 md:pt-28" id="experiencias">
       <h2 className="mb-18 text-4xl font-extrabold text-zinc-800 uppercase md:text-5xl lg:text-4xl xl:text-5xl">
         Experiências
       </h2>

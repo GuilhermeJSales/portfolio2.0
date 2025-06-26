@@ -5,7 +5,7 @@ import SocialLinks from "../social-links/social-links";
 export default function About() {
   return (
     <section
-      className="container grid items-center gap-14 pb-14 lg:grid-cols-[minmax(0,_800px)_auto] lg:justify-items-end"
+      className="container grid items-center gap-14 lg:grid-cols-[minmax(0,_800px)_auto] lg:justify-items-end"
       id="sobre"
     >
       <div>

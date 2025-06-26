@@ -46,7 +46,7 @@ export default function Header() {
 
       <nav
         ref={navRef}
-        className={`z-40 items-center max-lg:fixed max-lg:inset-0 max-lg:w-full lg:block ${open ? "flex" : "hidden"} animate-fadeIn`}
+        className={`z-[999] items-center max-lg:fixed max-lg:inset-0 max-lg:w-full lg:block ${open ? "flex" : "hidden"} animate-fadeIn`}
       >
         <div className="animate-fadeInOpacity fixed inset-0 bg-zinc-950/50 backdrop-blur-md lg:hidden"></div>
         <ul className="items-center text-2xl text-gray-700 max-lg:absolute max-lg:z-50 max-lg:w-full max-lg:divide-y-2 max-lg:divide-white/10 max-lg:p-8 max-lg:text-white lg:flex lg:gap-2.5 lg:text-base">

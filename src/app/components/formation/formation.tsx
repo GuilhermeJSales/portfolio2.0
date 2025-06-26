@@ -1,4 +1,5 @@
-import Certification from "./certifications/certification";
+import { Separator } from "@radix-ui/react-separator";
+import Skills from "../skills/skills";
 import FormationItem from "./formationItem";
 
 export type FormationProps = {
@@ -55,8 +56,8 @@ export default function Formation() {
     },
   ];
   return (
-    <section className="bg-gray-100 pt-28 pb-28" id="formacao">
-      <div className="container">
+    <section className="bg-gray-100 py-10 md:pt-28" id="formacao">
+      <div className="container mb-10">
         <h2 className="mb-18 text-4xl font-extrabold text-zinc-800 uppercase md:text-5xl lg:text-4xl xl:text-5xl">
           Cursos e Formações
         </h2>
@@ -67,6 +68,7 @@ export default function Formation() {
           ))}
         </ul>
       </div>
+      <Skills />
     </section>
   );
 }

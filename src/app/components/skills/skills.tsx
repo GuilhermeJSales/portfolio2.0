@@ -6,13 +6,13 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { skillsData } from "../../../../skills-data";
+import { skillsData } from "../../../../datas/skills-data";
 
 export default function Skills() {
   return (
-    <section className="py-28" id="habilidades">
+    <section className="pt-2 md:pt-10" id="habilidades">
       <div className="container">
-        <h2 className="mb-18 text-4xl font-extrabold text-zinc-800 uppercase md:text-5xl lg:text-4xl xl:text-5xl">
+        <h2 className="mb-12 text-4xl font-extrabold text-zinc-800 uppercase md:mb-18 md:text-5xl lg:text-4xl xl:text-5xl">
           Habilidades
         </h2>
       </div>
