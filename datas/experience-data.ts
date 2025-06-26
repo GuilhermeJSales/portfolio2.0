@@ -62,7 +62,7 @@ export const experiences: ExperienceProps[] = [
       data2: "",
       cargo2: "",
     },
-    promocao: true,
+    promocao: false,
     description:
       "Iniciei na empresa como Desenvolvedor Front-End JR 1, sendo responsável pelo desenvolvimento e manutenção de landing pages responsivas, alterações de layout, edição de imagens, configuração de hospedagens e resolução de demandas da equipe de tráfego pago. Após demonstrar proatividade e domínio técnico, fui promovido a Desenvolvedor Front-End JR 2, assumindo projetos mais complexos, como sites institucionais completos, com foco em performance, acessibilidade, SEO e boas práticas de desenvolvimento. Além disso, passei a atuar na refatoração de códigos legados e na implementação de sites com arquitetura mobile first.",
     competencias: [
