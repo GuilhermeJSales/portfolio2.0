@@ -84,7 +84,7 @@ export default function Header() {
 
       <button
         onClick={() => setOpen((prev) => !prev)}
-        className={`hidden ${open ? "menu-active" : ""} z-50 block cursor-pointer bg-transparent p-5 after:block after:h-0.5 after:w-5 after:rounded-sm after:bg-[currentColor] after:shadow-[currentcolor_0px_8px,_currentcolor_0px_-8px] after:transition after:duration-500 after:ease-in-out hover:text-amber-500 focus:text-amber-400 active:text-amber-400 max-lg:block`}
+        className={`hidden ${open ? "menu-active" : ""} z-[9999] block cursor-pointer bg-transparent p-5 after:block after:h-0.5 after:w-5 after:rounded-sm after:bg-[currentColor] after:shadow-[currentcolor_0px_8px,_currentcolor_0px_-8px] after:transition after:duration-500 after:ease-in-out hover:text-amber-500 focus:text-amber-400 active:text-amber-400 max-lg:block`}
       />
     </header>
   );
