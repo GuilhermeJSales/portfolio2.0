@@ -11,7 +11,7 @@ import email from "@/app/assets/email.svg";
 export default function Footer() {
   return (
     <footer>
-      <section className="relative mt-2 bg-gray-200 pt-20 pb-10">
+      <section className="relative bg-gray-200 pt-20 pb-10">
         <div className="container mb-10 grid grid-cols-1 gap-4 md:grid-cols-3 lg:gap-10">
           <nav>
             <h2 className="mb-2 font-bold">Links Rápidos:</h2>
