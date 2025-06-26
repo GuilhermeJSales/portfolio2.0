@@ -24,7 +24,7 @@ export const projectsData: ProjectsProps[] = [
     deploy: "https://mcodes.guijsweb.com.br/",
     img: mcodes,
     description:
-      "Sistema web desenvolvido para uma agência de automóveis, com autenticação de usuários e painel administrativo completo. Usuários logados podem cadastrar, editar e excluir veículos. A listagem conta com filtros reativos combináveis, permitindo busca por modelo, marca, ano, quilometragem e faixa de preço. Visitantes podem solicitar simulações por meio de um formulário, com os dados enviados diretamente para o dashboard do vendedor.",
+      "Sistema web desenvolvido para uma agência de automóveis, com autenticação de usuários e painel administrativo completo. Usuários logados podem cadastrar, editar e excluir veículos. A listagem conta com filtros reativos combináveis, permitindo busca por modelo, marca, ano, quilometragem e faixa de preço. Visitantes podem solicitar simulações por meio de um formulário, e os dados são enviados diretamente para o dashboard do vendedor.",
     tech: "React.js - TypeScript - TailwindCSS - Firebase - React Hook Form - Zod - React Icons - Browser Image Compression - Swiper.js",
   },
   {
