@@ -64,7 +64,7 @@ export default function Projects() {
                   </a>
                 </div>
                 <div
-                  className={`bg-white p-4 max-xl:max-w-[828px] max-xl:shadow-md ${roboto.className} ${index % 2 === 1 ? "sombra-dir xl:*:text-right" : "sombra xl:*:text-left"}`}
+                  className={`bg-zinc-50 p-4 max-xl:max-w-[828px] max-xl:shadow-md ${roboto.className} ${index % 2 === 1 ? "sombra-dir xl:*:text-right" : "sombra xl:*:text-left"}`}
                 >
                   <p className="mb-2 text-sm text-amber-700">{project.tech}</p>
                   <Separator

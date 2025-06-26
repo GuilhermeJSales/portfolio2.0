@@ -5,7 +5,7 @@ import SocialLinks from "../social-links/social-links";
 export default function About() {
   return (
     <section
-      className="container grid items-center gap-14 lg:grid-cols-[minmax(0,_800px)_auto] lg:justify-items-end"
+      className="container grid items-center gap-14 pt-[100px] lg:grid-cols-[minmax(0,_800px)_auto] lg:justify-items-end"
       id="sobre"
     >
       <div>
@@ -18,14 +18,13 @@ export default function About() {
 
         <div className="mt-8 flex flex-col gap-5 text-gray-700">
           <p>
-            Atualmente, moro na cidade de São Paulo, curso Ciência da Computação
-            e atuo como desenvolvedor desde 2020, construindo uma carreira
-            sólida em desenvolvimento web. Tenho experiência com tecnologias de
-            front-end, como{" "}
-            <strong>JavaScript, TypeScript, React, Next.js</strong> e o
-            ecossistema <strong>Node.js</strong>. Domino{" "}
-            <strong>HTML5 e CSS3</strong>, aplicando as melhores práticas de
-            semântica e estruturação.
+            Olá, sou Guilherme Jesus Sales, desenvolvedor front-end com
+            experiência desde 2020 na criação de interfaces modernas,
+            performáticas e bem estruturadas. Tenho domínio de tecnologias como{" "}
+            <strong>React</strong>, <strong>Next.js</strong>,{" "}
+            <strong>TypeScript</strong>, <strong>HTML5</strong>,{" "}
+            <strong>CSS3</strong> e foco em boas práticas de desenvolvimento,
+            como acessibilidade, semântica e código limpo.
           </p>
 
           <p>

@@ -120,8 +120,8 @@ export default function FormationItem({
   local,
 }: FormationProps) {
   return (
-    <li className="relative flex h-36 w-full max-w-full items-start gap-5 rounded-md bg-zinc-50 p-2 shadow-md before:absolute before:-left-1 before:block before:h-6 before:w-1.5 before:bg-amber-400 max-lg:flex-col max-lg:pb-8">
-      <div className="z-40 pl-5 lg:mb-32">
+    <li className="relative flex h-full w-full max-w-full items-start gap-5 rounded-md bg-zinc-50 p-2 shadow-md before:absolute before:-left-1 before:block before:h-6 before:w-1.5 before:bg-amber-400 max-lg:flex-col">
+      <div className="z-40 pl-5">
         <p className="font-bold uppercase lg:text-base">{curso}</p>
         <time className="text-base text-zinc-950 uppercase">{data}</time>
         <p className="text-sm text-zinc-800">{escola}</p>
